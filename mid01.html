@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment</title>
+    <style>
+      *{background-color:#FFD9FA;
+        font-style:"AppleGothic","Malgum Gothic";
+        max-width:550px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      ol{border-bottom:1px solid black;}
+      h3{color:#3DB7CC;
+        border-left:3px solid #3DB7CC;
+        padding:3px;
+        font-weight:bold;
+      display:inline;}
+      .page{text-align:right;}
+      table{
+        width:260px;
+        border;
+        box-shadow:1px 1px 1px black;
+        margin:10px;
+        margin-left:auto;
+        margin-right:auto;
+        }
+      tr,th,td{background-color:#D5D5D5;
+        text-align:center;
+      }
+      li{padding:5px;}
+      img{float:right;width:100px;padding:3px;}
+      div{text-align:right;}
+      
+      .text{color:white;background-color:gray;}
+       .color{
+        background-color:#5CD1E5;
+        border:1px solid #5CD1E5;
+      border-radius:5px;}
+      .het{text-align:center;}
+    </style>
+  </head>
+<body>
+  <div>
+  <h1>중간고사</h1>
+  <p>김민지</p>
+  </div>
+  <h3>표 만들기</h3>
+    <p>표를 만들려면 <strong class="text">table</strong> 요소를 사용해야 합니다.</p>
+    
+  <table>
+    <tr>
+      <th>음료</th>
+      <th>가격</th>
+      <th>알콜</th>
+    </tr>
+    <tr>
+      <td>아메리카노</td>
+      <td>2000</td>
+      <td>X</td>
+    </tr>
+     <tr>
+      <td>카페모카</td>
+      <td>2500</td>
+      <td>x</td>
+    </tr>
+     <tr>
+      <td>맥주</td>
+      <td>3000</td>
+      <td>Y</td>
+    </tr>
+    </table>
+      
+   <h3>HTML이란?</h3>
+        <p>HTML은 <strong class="color">하이퍼텍스트 마크업 언어(Hypertext Markup Language)</strong>의 약자로,웹 페이지를 만들 때 사용되는 문서 형식입니다.</p>
+  <p>하이퍼텍스트(Hypertext)란 하이퍼링크(Hyperlink)를 담고 있는 문서를 뜻합니다. 하이퍼링크는 문서들이 서로 연결되어 있는 고리를 뜻합니다.</p>
+   <h3>이미지 넣기</h3>
+  <p>이미지를 넣으려면 <strong class="text">img</strong>요소를 사용합니다.<img src=" http://kaywonsad.appspot.com/s/art01.jpg" alt="그림1"/></p>
+    <p></p>
+  <p><strong class="text">src</strong>속성에는 이미지의 경로(URL)를 적습니다.</p>
+    <p>이미지 요소에는 항상 <strong class="text">alt</strong>를 사용하여 대체 텍스트를 명시해주어야 합니다."Alt"는"Alternative Text"의 약자로,이미지를 표시할 수 없을 때 이미지를 대신하여 나타낼 텍스트를 뜻합니다.</p>
+   <h3>CSS란?</h3>
+  <p>CSS는 Cascading Stylesheet의 약자이며 HTML같은 마크업 언어로 작성된 문서을 꾸미기 위해 사용합니다. 문서의 <strong class="text">head</strong> 요소안에 <strong class="text">style</strong> 요소를 넣고 CSS코드를 적으면 해당 문서를 다양하게 꾸밀 수 있습니다.</p>
+    <p>CSS에 대한 자세한 설명은
+      <a href="#">css</a>문서를 참고하세요
+    </p>
+   <h3>인라인 요소 목록</h3>
+  <p>다음은 HTML에서 자주 사용되는 요소들입니다.</p>
+  <ul>
+    <li><strong class="color">a</strong>: 하이퍼링크(anchor)</li>
+    <li><strong class="color">img</strong>: 이미지(image)</li>
+    <li><strong class="color">span</strong>: 일반용도의 인라인(span)</li>
+    <li><strong class="color">strong</strong>: 중요(strong)</li>
+    <li><strong class="color">em</strong>: 강조(emophasis)</li>
+    </ul>
+   <h3>중첩된 목록</h3>
+  <p>목록 요소 안에 또다른 목록 요소를 중첩하여 사용할 수 있습니다.</p>
+   <ol>
+    <li>
+      <h4>홍길동</h4>
+     <ul>
+     <li>지각 없음</li>
+    <li>결석 없음</li>
+    <li>과제 완료</li>
+     </ul>
+     </li>
+     <li>
+       <h4>이몽룡</h4>
+       <ul>
+     <li>2회 지각</li>
+    <li>결석 없음</li>
+    <li>과제 완료</li>
+     </ul>
+     </li>
+    </ol>
+    <p class="het">2014년 10월 14일 중간고사, 김민지 작성</p>
+   
+  </body>
+</html>
