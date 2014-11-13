@@ -7,10 +7,10 @@
    *{text-align:center;
      font-family:NanumGothicCoding,sanserif;
      color:black;}
-    body{background-image:
-      url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1911673_661802647267875_1452044878328036073_n.jpg?oh=9422c2cc09a32a06619149c0ac5d289f&oe=54ED8CB9&__gda__=1423627207_b57dfc2043f73d30293daca4a10d78d5");
-      width:650px;
+    body{
+      width:100%;
       height:2000px;
+      max-width:800px;
     background-size:650px;
     background-repeat:no-repeat;
     background-attachment:scroll;
@@ -19,13 +19,9 @@
       margin-left:auto;
       margin-right:auto;
       background-color:#D8D8D8;
-      
-    max-width:780px;
-  
-      
-    }
+      max-width:780px;
+  }
     .leadcopy{
-    
       font-size:18px;
       position:relative;
       left:20px;
@@ -36,75 +32,89 @@
       word-spacing:130px;
  
     }
-       h1{font-size:1000%;
-         font-family:BM-HANNAStd,sanserif;
-         
-        text-align:center;
+       h1{font-size:450%;
+         font-family:BM-HANNAStd,sans-serif;
+          text-align:center;
          max-width:800px;
          margin-left:auto;
          margin-right:auto;
       position:relative;
-         top:500px;
-         left:3%;
+       left:3%;
        word-spacing:130px;}
     
     ul{list-style-type:none;
       margin-left:none;
       position:relative;
-      top:500px;
+      top:50px;
       }
-
-
-    
-    p{max-width:800px;
+     
+    p{max-width:600px;
       text-align:center;
       margin-left:auto;
     margin-right:auto;
       margin-bottom:50px;
     }
-    img{width:150px;height:150px;
+    
+    img{width:150px;
+      height:150px;
       border-radius:75px;}
-    .story{position:relative;
-    left:1%;
-      top:1170px;
-      margin:0;
-      padding:0;
-     
-    }
+    
+    .poster{
+      width:80%;
+        height:450px;
+      max-width:400px;
+      border-radius:0;
+     }
+    
+    .story{
+      position:relative;
+    padding-top:200px;
+      left:3%
+      text-align:center;
+      max-width:800px;
+      word-spacing:200px;
+       }
+    
     .시놉시스{position:relative;
-    top:1180px;
-      left:30px;
+    padding-top:50px;
+      left:3%;
     }
+    
     .시놉시스2{position:relative;
-    top:1150px;
-      left:30px;
+    padding-top:20px;
+      left:3%
     }
 
     .주연{
-      position:absolute;
-      left:45%;
-      padding-top:400px;
+      position:relative;
+      left:3%;
+      padding-top:200px;
     text-align:center;
       max-width:800px;
       word-spacing:50px;
     
     }
     .조연{
-      position:absolute;
-       left:45%;
-      padding-top:500px;
+      position:relative;
+       left:3%;
+      padding-top:120px;
        text-align:center;
     }
     .조연배우{
-      position:absolute;
-      padding-top:850px;
+      position:relative;
+     padding-top:25px;
+     
     }
     .조연배우들{float:left;
     margin:8px;}
+    
     .provide{
       position:relative;
-      top:1200px;}
-    .story{top:1130px;}
+     top:500px;
+    right:3%;
+    }
+   
+   
   </style>
 </head>
 <body>
@@ -113,6 +123,7 @@
   
   <h1>족구왕</h1>
   <ul>
+    <li><img class="poster" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1911673_661802647267875_1452044878328036073_n.jpg?oh=9422c2cc09a32a06619149c0ac5d289f&oe=54ED8CB9&__gda__=1423627207_b57dfc2043f73d30293daca4a10d78d5" alt="족구왕 포스터"></li>
     <li>
       <h2 class="주연">주연</h2>
       <ul>
@@ -139,8 +150,7 @@
     <li class="조연배우들">김왕근</li>
     <li class="조연배우들">윤동환</li>
     <li class="조연배우들">이세랑</li> 
-        
-      </ul>
+        </ul>
     </li>
   
   </ul>
@@ -159,5 +169,4 @@
 
   </body>
 </html>
- 
 
