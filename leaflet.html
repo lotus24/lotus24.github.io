@@ -57,7 +57,9 @@
     
     img{width:150px;
       height:150px;
-      border-radius:75px;}
+      border-radius:75px;
+    padding-right:5px;
+    }
     
     .poster{
       width:80%;
@@ -115,7 +117,44 @@
      top:200px;
     right:3%;
     }
-   
+    @media print{
+      body{background-color:white;
+      color:black;}
+      img{
+        width:80px;
+        height:80px;
+        border-radius:40px;
+      }
+    
+      p{
+        display:block;
+      }
+      h1{
+        margin-bottom:0;
+      }
+      .leadcopy{
+        color:black;
+      }
+      .주연{
+        padding-top:60px;
+        margin-bottom:0;
+        left:0;
+      }
+      .주연배우들{
+        float:left;
+      }
+    .조연{
+      padding-top:350px;
+      margin-bottom:0;
+      left:0;
+    }
+      .story{
+        padding-top:160px;
+      }
+      .provide{
+        top:100px;
+      }
+    }
    
   </style>
 </head>
@@ -130,15 +169,15 @@
       <h2 class="주연">주연</h2>
       <ul>
        
-        <li><img src="http://cfile212.uf.daum.net/image/23166A42545F360D0831D5" alt="안재홍">안재홍(홍만섭 역)</li>
+        <li class="주연배우들"><img src="http://cfile212.uf.daum.net/image/23166A42545F360D0831D5" alt="안재홍">안재홍(홍만섭 역)</li>
         
-    <li><img src="http://cfile201.uf.daum.net/image/27016C42545F360E2D15F7" alt="황승언">황승언(안나 역)</li>
+    <li class="주연배우들"><img src="http://cfile201.uf.daum.net/image/27016C42545F360E2D15F7" alt="황승언">황승언(안나 역)</li>
         
-   <li><img src="http://cfile224.uf.daum.net/image/227D4F42545F360E310ECB" alt="정우식">정우식(강민 역)</li>
+   <li class="주연배우들"><img src="http://cfile224.uf.daum.net/image/227D4F42545F360E310ECB" alt="정우식">정우식(강민 역)</li>
         
- <li><img src="http://cfile227.uf.daum.net/image/2119E142545F360F021D06" alt="강봉성">강봉성(창호 역)</li>
+ <li class="주연배우들"><img src="http://cfile227.uf.daum.net/image/2119E142545F360F021D06" alt="강봉성">강봉성(창호 역)</li>
         
-<li><img src="http://cfile232.uf.daum.net/image/257D6F42545F360F31FD43" alt="황미영">황미영(미래 역)</li>
+<li class="주연배우들"><img src="http://cfile232.uf.daum.net/image/257D6F42545F360F31FD43" alt="황미영">황미영(미래 역)</li>
         
       </ul>
     </li>
