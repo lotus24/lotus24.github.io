@@ -43,7 +43,7 @@
        word-spacing:130px;}
     
     ul{list-style-type:none;
-      margin-left:none;
+      margin-left:0;
       position:relative;
       top:50px;
       }
@@ -71,10 +71,10 @@
     .story{
       position:relative;
     padding-top:200px;
-      left:3%
+      padding-left:10%;
       text-align:center;
       max-width:800px;
-      word-spacing:200px;
+      
        }
     
     .시놉시스{position:relative;
@@ -104,8 +104,8 @@
     .조연배우{
       position:relative;
      padding-top:25px;
-      padding-left:70px;
-      left:5%;
+      padding-left:15%;
+      
      
     }
     .조연배우들{float:left;
@@ -114,7 +114,7 @@
     .provide{
       position:relative;
      top:200px;
-    right:3%;
+    right:0;
     }
     @media print{
       body{background-color:white;
@@ -125,6 +125,7 @@
         border-radius:40px;
       }
     ul{
+      padding-left:0;
       top:30px;
       
     }
@@ -134,6 +135,7 @@
       }
       h1{
         margin-bottom:0;
+        margin-right:3%;
       }
       .leadcopy{
         color:black;
@@ -144,9 +146,12 @@
       }
       .주연{
         padding-top:50px;
-        padding-right:35px;
+        padding-right:0;
         margin-bottom:0;
         left:0;
+      }
+      .주연배우{
+        padding-left:70px;
       }
       .주연배우들{
         float:left;
@@ -154,20 +159,21 @@
       }
     .조연{
       padding-top:200px;
-      padding-right:35px;
+      padding-right:20px;
       margin-bottom:0;
-      left:0;
+      
       page-break-before:always;
     }
       .조연배우{
-        margin-left:17px;
+        margin-left:30px;
         padding-top:0;
       }
       .조연배우들{
         margin:6px;
-      }
+        }
       .story{
         padding-top:160px;
+        padding-right:8%;
       }
       .시놉시스{
         padding-top:15px;
@@ -178,7 +184,7 @@
       }
       .provide{
         top:70px;
-        padding-left:30px;
+       padding-left:3%;
         page-break-inside:avoid;
       }
     }
@@ -194,7 +200,7 @@
     <li><img class="poster" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1911673_661802647267875_1452044878328036073_n.jpg?oh=9422c2cc09a32a06619149c0ac5d289f&amp;oe=54ED8CB9&amp;__gda__=1423627207_b57dfc2043f73d30293daca4a10d78d5" alt="족구왕 포스터"></li>
     <li>
       <h2 class="주연">주연</h2>
-      <ul>
+      <ul class="주연배우">
        
         <li class="주연배우들"><img src="http://cfile212.uf.daum.net/image/23166A42545F360D0831D5" alt="안재홍">안재홍(홍만섭 역)</li>
         
