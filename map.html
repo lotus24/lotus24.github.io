@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Google map</title>
+    <style>
+      body{
+        font-family:Dotum, 돋움, Helvetica, AppleSDGothicNeo, sans-serif;
+        background-color:#4588E6;
+       
+margin:0 auto;
+      }
+      p{
+        margin:0;
+        color:white;
+        font-weight:bold;
+        }
+      div{
+        
+        padding-top:0;
+        padding-bottom:30px;
+      }
+      .fa{
+        padding:10px;
+        font-size:30px;
+      }
+      .길찾기{
+        
+        padding-top:0;
+        margin:0 auto;
+        background-color:#4588E6;
+        width:100%;
+        position:relative;
+        left:20%;
+      }
+      .출발시간{
+        margin:0 auto;
+        width:100%;
+        background-color:#0054FF;
+       
+      }
+      .아이콘{
+        display:inline;
+        background-color:#4588E6;
+      }
+      .해당없음{
+        color:#8BC5F8;
+      }
+      .표시,.지하철{
+        color:white;
+      }
+      .교통수단{
+        
+        
+      }
+      .표시{
+       position:fixed;
+        left:0;
+ }
+
+      .point,.between{
+        color:white;
+        padding-right:5%; 
+      }
+      .between{
+        font-size:2px;
+        padding-left:15px;
+        padding-bottom:0;
+      }
+      .출발,.도착{
+        padding-right:70%;
+      }
+      .거리,.목적지{
+        float:left;
+      }
+      .출발{
+        padding-top:15px;
+        padding-bottom:40px;
+
+        border-bottom:1px solid #8BC5F8;;
+      }
+      .도착{
+        padding-top:30px;
+        padding-bottom:5px;
+      }
+      .목적지{
+        padding-right:3%;
+        padding-left:30px;
+        float:left;
+        padding-bottom:0;
+
+      }
+      .흐름{
+        padding-top:2%;
+}
+      .위{
+        
+      }
+       .흐름:first-child{
+        padding-top:40px;
+      }
+      .슬라이더{
+        padding-top:0;
+        float:left;
+        padding-right:20px;
+      }
+      .시간,.옵션{
+        padding-top:5px;
+        padding-right:10px;
+        float:left;
+      }
+      .옵션{
+        padding-left:270px;
+      }
+      .출발시간 p{
+        position:relative;
+        left:15.5%;
+      }
+      .시간표{
+        background-color:white;
+        width:100%;
+        color:#5D5D5D;
+        border-bottom:1px solid #5D5D5D;
+      }
+      .시간표 p{
+        color:#5D5D5D;
+      }
+      .시간표 .세부시간{
+       padding-left:
+      }
+
+      .번호{
+        background-color:#0054FF;
+        color:white;
+      }
+      .선택수단{
+        padding-right:20px;
+      }
+      .선택수단,.세부시간{
+        float:left;
+        background-color:white;
+      }
+    .선택대상{
+      padding-right:40px;
+    }
+     
+      .세부정보{
+        padding-left:160px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="길찾기">
+      <p class="아이콘"> 
+       
+      </p>
+      <div class="교통수단">
+        <i class="fa fa-arrow-left 표시"></i>
+        <i class="fa fa-bus 해당없음"></i>
+        <i class="fa fa-cab 지하철"></i>
+        <i class="fa fa-male 해당없음"></i>
+      </div>
+
+      <div class="거리">
+        <p><i class="fa fa-map-marker point"></i><p>
+        <p> <i class="fa fa-circle between"></i></p>
+        <p><i class="fa fa-circle between"></i></p>
+        <p><i class="fa fa-circle between"></i></p>
+        <p><i class="fa fa-map-marker point"></i></p>
+      </div>
+
+      <div class="목적지">
+        <p class="출발">계원예술대학교</p>
+        <p class="도착">신사동 가로수길</p>
+      </div>
+
+      <div class="흐름">
+        <p><i class="fa fa-arrow-up 해당없음 위"></i></p>
+        <p><i class="fa fa-arrow-down 해당없음"></i></p>
+      </div>
+    </div>
+    <div class="출발시간">
+      <p><i class="fa fa-sliders 해당없음 슬라이더"></i></p>
+      <p class="시간">Depart at 4:09 PM</p>
+      <p class="옵션">OPTIONS</p>
+    </div>
+    <div class="시간표">
+        <p><i class="fa fa-cab 선택대상"></i>4:09-5:30PM 1hr25min</p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">441</strong></p>
+        <p class="세부정보">4:25PM from 계원예술대학교</p>
+        <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
+
+      </div>
+        <div class="시간표">
+        <p><i class="fa fa-cab 선택대상"></i>4:09-5:30PM 1hr25min</p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">441</strong></p>
+        <p class="세부정보">4:25PM from 계원예술대학교</p>
+        <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
+
+      </div>
+        <div class="시간표">
+        <p><i class="fa fa-cab 선택대상"></i>4:09-5:30PM 1hr25min</p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">441</strong></p>
+        <p class="세부정보">4:25PM from 계원예술대학교</p>
+        <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
+
+      </div>
+        <div class="시간표">
+        <p><i class="fa fa-cab 선택대상"></i>4:09-5:30PM 1hr25min</p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">441</strong></p>
+        <p class="세부정보">4:25PM from 계원예술대학교</p>
+        <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
+
+      </div>
+
+
+  </body>
+</html>
