@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>기말고사</title>
+  <style>
+  body{
+    background-color:#14CCAF;
+    font-family:"Arial","Myriad",sans-serif;
+  }
+    header,section{
+      max-width:500px;
+      margin:0 auto;
+    }
+    header{
+      text-align:right;
+      font-size:20px;
+      width:100%;
+      background-color:#1294AB;
+      padding:10px;
+    }
+    section{
+      
+      width:100%;
+      padding:10px;
+    }
+    p{margin-top:0;}
+    .fa{
+      padding-right:10px;
+      color:#5CD1E5;
+    }
+    .년일{
+      background-color:#5CD1E5;
+      text-align:center;
+      font-size:30px;
+      color:white;
+    }
+    .화살표{
+      color:white;
+    }
+    .날짜{
+      font-size:2.5em;
+      padding:0 140px;
+    }
+    .년일 p:last-child{
+      color:#4C4C4C;
+    }
+    .당일요일{
+      background-color:#747474;
+    }
+    .당일요일 p{
+      padding-top:5px;
+      color:white;
+      font-weight:bold;
+    }
+
+    .알람{
+      background-color:#F6F6F6;
+      overflow-y:scroll; 
+      border:1px solid #D5D5D5;
+      width:100%;
+    }
+    .fa-bell,.fa-sliders{
+      color:#368AFF;
+      padding:10px;
+    }
+    .fa-sliders{
+      padding-left:300px;
+    }
+    .알람목록 div,요일{
+      float:left;
+    }
+    .요일 p{
+      padding-left:30px;
+    }
+    .요일 p:first-child{
+      font-size:30px;
+    }
+     .요일 p:last-child{
+      color:#D5D5D5;
+    }
+    .fa-plus{
+      background-color:yellow;
+      line-height:55px;
+      text-align:center;
+      width:50px;
+      height:50px;
+      border-radius:25px;
+      padding-right:0;
+      color:black;
+      position:absolute;
+      left:550px;
+      top:310px;
+      box-shadow:1px 4px 2px 0.5px #5D5D5D;
+    }
+    .해당요일{
+      color:#368AFF;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <i class="fa fa-minus"></i>
+    <i class="fa fa-square-o"></i>
+    <i class="fa fa-close"></i>
+  </header>
+  <section class="년일">
+    <p><i class="fa fa-arrow-left 화살표"></i><strong class="날짜">18</strong><i class="fa fa-arrow-right 화살표"></i></p>
+    <p>July 2014</p>
+  </section>
+  
+  <section class="당일요일">
+    <p> Monday</p>
+    
+  </section>
+  
+ <section class="알람">
+   
+  <div class="알람목록">
+    <div><i class="fa fa-bell"></i></div>
+    <div class="요일">
+    <p> 06:30<i class="fa fa-sliders"></i></p>
+      <p> <strong class="해당요일">SU</strong> MO <strong class="해당요일">TU WE</strong> TH <strong class="해당요일">FR SA</strong></p>
+    </div>
+   </div>
+   
+    <div class="알람목록">
+    <div><i class="fa fa-bell"></i></div>
+    <div class="요일">
+    <p> 06:30<i class="fa fa-sliders"></i></p>
+      <p>SU MO TU <strong class="해당요일">WE</strong> TH FR SA</p>
+    </div>
+</div>
+   
+    <div class="알람목록">
+    <div><i class="fa fa-bell"></i></div>
+    <div class="요일">
+    <p> 06:30<i class="fa fa-sliders"></i></p>
+      <p> <strong class="해당요일">SU</strong> MO TU WE TH FR SA</p>
+    </div>
+</div>
+   
+    <div class="알람목록">
+    <div><i class="fa fa-bell"></i></div>
+    <div class="요일">
+    <p> 06:30<i class="fa fa-sliders"></i></p>
+      <p>SU MO TU WE TH <strong class="해당요일">FR SA</strong></p>
+    </div>
+   </div>
+  </section>
+  
+    <div class="추가">
+      <i class="fa fa-plus"></i>
+    </div>
+  
+</body>
