@@ -21,6 +21,7 @@ margin:0 auto;
         padding-top:0;
         padding-bottom:30px;
       }
+      
       .fa{
         padding:10px;
         font-size:30px;
@@ -128,9 +129,19 @@ margin:0 auto;
         color:#5D5D5D;
       }
  
-
+      .번호,.시내번호,.시외번호{
+        padding:5px;
+      }
       .번호{
         background-color:#0054FF;
+        color:white;
+      }
+        .시내번호{
+        background-color:#59DA50;
+        color:white;
+      }
+      .시외번호{
+        background-color:#FF1212;
         color:white;
       }
       .선택수단{
@@ -146,6 +157,20 @@ margin:0 auto;
      
       .세부정보{
         padding-left:80px;
+      }
+      .소요시간{
+        padding-left:270px;
+      }
+      .대기시간,.소요시간{
+        color:#000000;
+      }
+      @media(max-width:630px){
+        .시내번호,.시외번호{
+          display:none;
+        }
+        .소요시간{
+          padding-left:10px;
+        }
       }
     </style>
   </head>
@@ -185,34 +210,39 @@ margin:0 auto;
       <p class="시간">Depart at 4:09 PM</p>
       <p class="옵션">OPTIONS</p>
     </div>
+    
     <div class="시간표">
-        <p><i class="fa fa-cab 선택대상"></i>4:09-5:30PM 1hr25min</p>
+        <p><i class="fa fa-cab 선택대상"></i><strong class="대기시간">4:09-5:30PM</strong> <strong class="소요시간">1hr 25min</strong></p>
         <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">441</strong></p>
         <p class="세부정보">4:25PM from 계원예술대학교</p>
         <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
 
       </div>
-        <div class="시간표">
-        <p><i class="fa fa-cab 선택대상"></i>4:09-5:30PM 1hr25min</p>
-        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">441</strong></p>
+    
+       <div class="시간표">
+         <p><i class="fa fa-cab 선택대상"></i><strong class="대기시간">4:09-5:41PM</strong> <strong class="소요시간">1hr 31min</strong></p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="시내번호">4318</strong>&gt;<i class="fa fa-bus"></i><strong class="시외번호">9404</strong></p>
         <p class="세부정보">4:25PM from 계원예술대학교</p>
         <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
 
       </div>
-        <div class="시간표">
-        <p><i class="fa fa-cab 선택대상"></i>4:09-5:30PM 1hr25min</p>
-        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">441</strong></p>
-        <p class="세부정보">4:25PM from 계원예술대학교</p>
+    
+     <div class="시간표">
+         <p><i class="fa fa-cab 선택대상"></i><strong class="대기시간">4:09-5:49PM</strong> <strong class="소요시간">1hr 39min</strong></p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">51</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">540</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">148</strong></p>
+        <p class="세부정보">4:22PM from 계원예술대학교</p>
         <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
 
       </div>
-        <div class="시간표">
-        <p><i class="fa fa-cab 선택대상"></i>4:09-5:30PM 1hr25min</p>
-        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">441</strong></p>
-        <p class="세부정보">4:25PM from 계원예술대학교</p>
+    
+         <div class="시간표">
+         <p><i class="fa fa-cab 선택대상"></i><strong class="대기시간">4:09-5:47PM</strong> <strong class="소요시간">1hr 38min</strong></p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">51</strong>&gt;<i class="fa fa-bus"></i><strong class="시외번호">3030</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">145</strong></p>
+        <p class="세부정보">4:22PM from 계원예술대학교</p>
         <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
 
       </div>
+  
 
 
   </body>
