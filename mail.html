@@ -2,335 +2,248 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>mail page</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Google map</title>
     <style>
-
       body{
         font-family:Dotum, 돋움, Helvetica, AppleSDGothicNeo, sans-serif;
-        margin:0;
-        font-size:14px;
-        line-height:24px;
+        background-color:#4588E6;
+       
+margin:0 auto;
       }
-      header{
-        background-color:#FF3636;
+      p{
+        margin:0;
         color:white;
-        position:fixed;
-        left:0;
-        right:0;
-        height:50px;
-        padding:10px;
-        vertical-align:top;
-        margin:0 auto;
-        box-sizing: border-box;
-      }
-      header,section{
-        padding: 1em 1em 0.6em 1em;
-      }
-      header .menu {
-        display: inline-block;
-        width: 30px;
-        padding-right:5px;
-      }
-      header .search {
-        display: inline-block;
-        width: 30px;
-        padding-left:20%;
-        padding-right:20%;
-      }
-
-      header h1 {
-        display: inline;
-        font-size: 1rem;
-        font-weight: normal;
-        position:absolute;
-        left:10%;
-      }
-      h2{
-        padding:0;
-        margin:0;
-        font-size:14px;
-      }
-      ul{
-        list-style-type:none;
-        margin:0;
-
-      }
-      li{
-        padding-left:10px;
-
-
-      }
-      img{
-        width:30px;
-        padding-left:10px;
-      }
-      a{
-        text-decoration:none;
-        color:#3DB7CC;
-      }
+        font-weight:bold;
+        }
       div{
+        
+        padding-top:0;
+        padding-bottom:30px;
+      }
+      
+      .fa{
+        padding:10px;
+        font-size:30px;
+      }
+      .길찾기{
+        
+        padding-top:0;
+        margin:0 auto;
+        background-color:#4588E6;
+        width:100%;
+        position:relative;
+        left:20%;
+      }
+      .출발시간{
+        margin:0 auto;
+        width:100%;
+        background-color:#0054FF;
+       
+      }
+      .아이콘{
+        display:inline;
+        background-color:#4588E6;
+      }
+      .해당없음{
+        color:#8BC5F8;
+      }
+      .표시,.지하철{
+        color:white;
+      }
+      .교통수단{
+        
+        
+      }
+      .표시{
+       position:fixed;
+        left:0;
+ }
+
+      .point,.between{
+        color:white;
+        padding-right:5%; 
+      }
+      .between{
+        font-size:2px;
+        padding-left:15px;
+        padding-bottom:0;
+      }
+      .출발,.도착{
+        padding-right:70%;
+      }
+      .거리,.목적지{
         float:left;
       }
-      span{
-        display:inline-block;
-      }
+      .출발{
+        padding-top:15px;
+        padding-bottom:40px;
 
-      .프로필사진{
-        width:40px;
-        height:40px;
-        border-radius:20px;
+        border-bottom:1px solid #8BC5F8;;
       }
-      .photoalarm,.photoalarms{
-        width:40px;
-        height:40px;
-        border-radius:20px;
+      .도착{
+        padding-top:30px;
+        padding-bottom:5px;
       }
-      .photoalarm{
+      .목적지{
+        padding-right:3%;
+        padding-left:30px;
+        float:left;
+        padding-bottom:0;
+
+      }
+      .흐름{
+        padding-top:2%;
+}
+      .위{
+        
+      }
+       .흐름:first-child{
         padding-top:40px;
       }
-      h1 span:first-child{
-        padding-left:50px;
+      .슬라이더{
+        padding-top:0;
+        float:left;
+        padding-right:20px;
       }
-      h2{
-        display:inline;
+      .시간,.옵션{
+        padding-top:5px;
+        padding-right:10px;
+        float:left;
       }
-
-
-      .사이드바{
-        position: absolute;
-        top: 52px;
-        left: 0;
-        width: 67px;
-        bottom: 0;
-        background-color: white;
-        overflow-y:scroll;
-        box-sizing:border;
-        padding-left:0;
+      .옵션{
+        padding-left:270px;
       }
-      .사이드바 ul{
-        padding:0;
+      .출발시간 p{
+        position:relative;
+        left:15.5%;
       }
-      .사이드바 ul li{
-        padding:0;
+      .시간표{
+        background-color:white;
+        width:100%;
+        color:#5D5D5D;
+        border-bottom:1px solid #5D5D5D;
+        padding-left:20%;
       }
-      .메인
-      {
-        position: absolute;
-        top: 52px;
-        left: 64px;
-        right: 0;
-        bottom: 0;
-        background-color: white;
-        box-shadow: -1px 0px 6px #CCC;
+      .시간표 p{
+        color:#5D5D5D;
       }
-
-      .리스트,
-      .콘텐츠 {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        background-color: white;
-        box-shadow: -1px 0px 6px #CCC;
-        overflow-y: scroll;
-        box-sizing:border-box;
-        padding-left:0;}
-
-
-
-      section.리스트 {
-        width: 40%;
-        left: 0;
-        z-index: 1;
-
+ 
+      .번호,.시내번호,.시외번호{
+        padding:5px;
       }
-      .리스트 ul{
-        padding-left:5px;
-      }
-      section.콘텐츠 {
-        width: 60%;
-        right: 0;
-
-      }
-      .리스트 .소셜알람{
-        background-color:#6799FF;
+      .번호{
+        background-color:#0054FF;
         color:white;
-        padding:2px 3px;
-        font-size:12px;
-
       }
-      .리스트 .업데이트알람{
-        background-color:#FFBB00;
+        .시내번호{
+        background-color:#59DA50;
         color:white;
-        padding:2px 3px;
-        font-size:12px;
       }
-      .리스트 .프로모션알람{
-        background-color:#23B06A;
+      .시외번호{
+        background-color:#FF1212;
         color:white;
-        padding:2px 3px;
-        font-size:12px;
       }
-      .리스트 .직장{
-        background-color:#FF3636;
-        color:white;
-        padding:2px 3px;
-        font-size:12px;
+      .선택수단{
+        padding-right:20px;
       }
-      .리스트 .가족{
-        background-color:#5CD1E5;
-        color:#008299;
-        padding:2px 3px;
-        font-size:12px;
+      .선택수단,.세부시간{
+        float:left;
+        background-color:white;
       }
-
-      .좋아요{
-        background-color:#B2CCFF;
-        color:#003399;
-        padding:3px 5px;
+    .선택대상{
+      padding-right:40px;
+    }
+     
+      .세부정보{
+        padding-left:80px;
       }
-      .인박스{
-        background-color:#D5D5D5;
-        color:#747474;
-        padding:3px 5px;
+      .소요시간{
+        padding-left:270px;
       }
-      @media(max-width:617px){
-        .콘텐츠,.메일내용{
+      .대기시간,.소요시간{
+        color:#000000;
+      }
+      @media(max-width:630px){
+        .시내번호,.시외번호{
           display:none;
         }
-        section .리스트{
-          width:100%;
-        }
-
-      }
-      @media(max-width:582px){
-        header img{
-          width:15px;
-          padding-left:0;
-        }
-        hedder .menu,header .search{
-          width:1px;
+        .소요시간{
+          padding-left:10px;
         }
       }
-
     </style>
   </head>
   <body>
-    <header>
-      <div class="menu"><img src="http://cfile234.uf.daum.net/image/25632145546EC26508EBD5" alt="menu"></div>
-      <h1>Primary</h1>
-      <div class="search"><img src="http://cfile205.uf.daum.net/image/2105923D546EC268133C09" alt="search"></div>
-      <div class="menu"><img src="http://cfile205.uf.daum.net/image/21049142546EC26012A669" alt="index"></div>
-      <div class="menu"><img src="http://cfile209.uf.daum.net/image/2456AD4A546F4BAB28610B" alt="delete"></div>
-      <div class="menu"><img src="http://cfile236.uf.daum.net/image/2764B245546EC2640774E3" alt="mail"></div>
-      <div class="menu"><img src="http://cfile232.uf.daum.net/image/2376EF42546EC26122B87F" alt="folder"></div>
-      <div class="menu"><img src="http://cfile229.uf.daum.net/image/23470945546EC2652AEEB9" alt="more"></div>
-    </header>
 
-    <section class="사이드바">
-      <ul>
-        <li><img class="photoalarms" src="http://postfiles1.naver.net/20100625_272/kensin626_1277452315377Nd1H1_png/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EB%94%B0%EC%8A%A4%ED%95%9C_%ED%96%87%EC%82%B4%EA%B0%99%EC%9D%80_%EB%8F%99%ED%99%94_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B801_kensin626.png?type=w2" alt="me"></li>
-        <li><img src="http://cfile215.uf.daum.net/image/25691745546EC26702B793" alt="chat list"></li>
-        <li><img src="http://cfile221.uf.daum.net/image/25440A45546EC2662DCBFA" alt="social"></li>
-        <li><img src="http://cfile217.uf.daum.net/image/25068A42546EC2630F96C9" alt="local offer"></li>
-        <li><img src="http://cfile210.uf.daum.net/image/227D0742546EC262192E92" alt="information"></li>
-        <li><img class="photoalarm"  src="http://postfiles10.naver.net/20100625_9/kensin626_1277452318585tozTX_png/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EB%94%B0%EC%8A%A4%ED%95%9C_%ED%96%87%EC%82%B4%EA%B0%99%EC%9D%80_%EB%8F%99%ED%99%94_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B804_kensin626.png?type=w2" alt="friend"></li>
-        <li><img class="photoalarms" src="http://postfiles8.naver.net/20100625_151/kensin626_1277452316547MJHOi_png/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EB%94%B0%EC%8A%A4%ED%95%9C_%ED%96%87%EC%82%B4%EA%B0%99%EC%9D%80_%EB%8F%99%ED%99%94_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B802_kensin626.png?type=w2" alt="work"></li>
-      </ul>
-    </section>
+    <div class="길찾기">
+      <p class="아이콘"> 
+       
+      </p>
+      <div class="교통수단">
+        <i class="fa fa-arrow-left 표시"></i>
+        <i class="fa fa-bus 해당없음"></i>
+        <i class="fa fa-cab 지하철"></i>
+        <i class="fa fa-male 해당없음"></i>
+      </div>
 
-    <section class="메인">
-      <section class="리스트">
-        <ul>
-          <li>
-            <span><img class="ic" src="http://cfile221.uf.daum.net/image/25440A45546EC2662DCBFA" alt="social"></span>
-            <h2>Social</h2>
-            <span class="type">Google+</span>
-            <span class="소셜알람">1 New</span>
-          </li>
-          <li>
-            <span><img class="ic" src="http://cfile217.uf.daum.net/image/25068A42546EC2630F96C9" alt="local offer"></span>
-            <h2>Promotion</h2>
-            <span>Zagat, Google Offers</span>
-            <span class="프로모션알람">2 New</span>
-          </li>
-          <li>
-            <span><img class="ic" src="http://cfile210.uf.daum.net/image/227D0742546EC262192E92" alt="information"></span>
-            <h2>Updates</h2>
-            <span>Google Play</span>
-            <span class="업데이트알람">1 New</span>
-          </li>
-          <li>
-            <span><img class="프로필사진"  src="http://postfiles12.naver.net/20100624_123/kensin626_1277337371879So9qj_gif/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EA%B9%94%EB%81%94%ED%95%9C_%ED%8C%AC%EC%8B%9C_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B801_kensin626.gif?type=w2" alt="Andy Brown"></span>
-            <h3>Andy Brown</h3>
-            <span>1:45 PM</span>
-            <div>Lorem Ipsum is simply dummy.</div>
-            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-            <span class="직장">work</span>
-            <span><img src="http://cfile222.uf.daum.net/image/2368483D546EC269366A36" alt="star"></span>
-          </li>
-          <li>   
-            <span><img class="프로필사진" src="http://postfiles4.naver.net/20100624_115/kensin626_1277337372636SQ78R_jpg/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EA%B9%94%EB%81%94%ED%95%9C_%ED%8C%AC%EC%8B%9C_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B815_kensin626.jpg?type=w2" alt="Keri Anderson"></span>
-            <h3>Keri Anderson</h3>
-            <span><img src="http://cfile202.uf.daum.net/image/27078D42546EC2610F5088" alt="attechment"></span>
-            <span>1:39 PM</span>
-            <div>Lorem Ipsum is simply dummy.</div>
-            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-            <span><img src="http://cfile222.uf.daum.net/image/2368483D546EC269366A36" alt="star"></span>
-          </li>
-          <li>
-            <span><img class="프로필사진" src="http://postfiles3.naver.net/20100624_194/kensin626_1277337414084a5jhn_jpg/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EA%B9%94%EB%81%94%ED%95%9C_%ED%8C%AC%EC%8B%9C_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B826_kensin626.jpg?type=w2" alt="Regis,Peter,Rachel 3"></span>
-            <h3>Regis,Peter,Rachel 3</h3>
-            <span>sep 29</span>
-            <div>Lorem Ipsum is simply dummy.</div>
-            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-            <span class="좋아요">fun</span>
-            <span><img src="http://cfile234.uf.daum.net/image/2302AF3D546EC269176FD5" alt="star"></span>
-          </li>
-          <li>
-            <span><img class="프로필사진" src="http://postfiles8.naver.net/20100628_119/kensin626_1277712523798nnzrU_jpg/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EA%B9%9C%EC%B0%8D%ED%95%9C_%EB%8F%99%EB%AC%BC%EB%93%A4%EC%9D%B4_%EC%98%B9%EA%B8%B0%EC%A2%85%EA%B8%B0_%EC%9E%88%EB%8A%94_%EB%8F%99%ED%99%94_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B807_kensin626.jpg?type=w2" alt="Aruna Knight"></span>
-            <h3>Aruna Knight</h3>
-            <span>sep 29</span>
-            <div>Lorem Ipsum is simply dummy.</div>
-            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-            <span class="가족">family</span>
-            <span><img src="http://cfile234.uf.daum.net/image/2302AF3D546EC269176FD5" alt="star"></span>
-          </li>
-        </ul>
-      </section>
-      <section class="콘텐츠">
-        <ul class="메일내용">
-          <li>
-            <span>Board game night?</span>
-            <span class="좋아요">fun</span>
-            <span class="인박스">inbox</span>
-            <span><img src="http://cfile234.uf.daum.net/image/2302AF3D546EC269176FD5" alt="star"></span>
-          </li>
-          <li>
-            <span><img class="프로필사진" src="http://postfiles3.naver.net/20100624_194/kensin626_1277337414084a5jhn_jpg/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EA%B9%94%EB%81%94%ED%95%9C_%ED%8C%AC%EC%8B%9C_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B826_kensin626.jpg?type=w2" alt="Regis Miller"></span>
-            <h3>Regis Miller</h3>
-            <span>Sep 29</span>
-            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-          </li>
-          <li>
-            <span><img class="프로필사진" src="http://postfiles13.naver.net/20100628_76/kensin626_1277712528730S78mx_jpg/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EA%B9%9C%EC%B0%8D%ED%95%9C_%EB%8F%99%EB%AC%BC%EB%93%A4%EC%9D%B4_%EC%98%B9%EA%B8%B0%EC%A2%85%EA%B8%B0_%EC%9E%88%EB%8A%94_%EB%8F%99%ED%99%94_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B818_kensin626.jpg?type=w2" alt="Peter Johnson"></span>
-            <h3>Peter Johnson</h3>
-            <span>Sep 29</span>
-            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-          </li>
-          <li>
-            <span><img class="프로필사진" src="http://postfiles13.naver.net/20100628_92/kensin626_1277712584641xDE8B_jpg/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8_%EA%B9%9C%EC%B0%8D%ED%95%9C_%EB%8F%99%EB%AC%BC%EB%93%A4%EC%9D%B4_%EC%98%B9%EA%B8%B0%EC%A2%85%EA%B8%B0_%EC%9E%88%EB%8A%94_%EB%8F%99%ED%99%94_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B831_kensin626.jpg?type=w2" alt="Rachel Shin"></span>
-            <h3>Rachel Shin</h3>
-            <span><img src="http://cfile226.uf.daum.net/image/213C4645546EC2673734F4" alt="replay"></span>
-            <span><img src="http://cfile202.uf.daum.net/image/217B2C42546EC2621AE2AA" alt="forward"></span>
-            <span><img src="http://cfile229.uf.daum.net/image/23470945546EC2652AEEB9" alt="more"></span>
-            <div>to me</div>
-            <div>sep 29<a href="#">view details</a></div>
-            <div>Lorem Ipsum is simply dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-            <div><a href="#">▶Lorem Ipsum is simply dummy.</a></div>
-          </li>
-          <li><img src="http://cfile226.uf.daum.net/image/213C4645546EC2673734F4" alt="replay"><img src="http://cfile215.uf.daum.net/image/23496645546EC2682949F6" alt="replay all"><img src="http://cfile202.uf.daum.net/image/217B2C42546EC2621AE2AA" alt="forward"></li>
-        </ul>
-      </section>
-    </section>
+      <div class="거리">
+        <p><i class="fa fa-map-marker point"></i><p>
+        <p> <i class="fa fa-circle between"></i></p>
+        <p><i class="fa fa-circle between"></i></p>
+        <p><i class="fa fa-circle between"></i></p>
+        <p><i class="fa fa-map-marker point"></i></p>
+      </div>
+
+      <div class="목적지">
+        <p class="출발">계원예술대학교</p>
+        <p class="도착">신사동 가로수길</p>
+      </div>
+
+      <div class="흐름">
+        <p><i class="fa fa-arrow-up 해당없음 위"></i></p>
+        <p><i class="fa fa-arrow-down 해당없음"></i></p>
+      </div>
+    </div>
+    <div class="출발시간">
+      <p><i class="fa fa-sliders 해당없음 슬라이더"></i></p>
+      <p class="시간">Depart at 4:09 PM</p>
+      <p class="옵션">OPTIONS</p>
+    </div>
+    
+    <div class="시간표">
+        <p><i class="fa fa-cab 선택대상"></i><strong class="대기시간">4:09-5:30PM</strong> <strong class="소요시간">1hr 25min</strong></p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">441</strong></p>
+        <p class="세부정보">4:25PM from 계원예술대학교</p>
+        <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
+
+      </div>
+    
+       <div class="시간표">
+         <p><i class="fa fa-cab 선택대상"></i><strong class="대기시간">4:09-5:41PM</strong> <strong class="소요시간">1hr 31min</strong></p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">1-1</strong>&gt;<i class="fa fa-bus"></i><strong class="시내번호">4318</strong>&gt;<i class="fa fa-bus"></i><strong class="시외번호">9404</strong></p>
+        <p class="세부정보">4:25PM from 계원예술대학교</p>
+        <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
+
+      </div>
+    
+     <div class="시간표">
+         <p><i class="fa fa-cab 선택대상"></i><strong class="대기시간">4:09-5:49PM</strong> <strong class="소요시간">1hr 39min</strong></p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">51</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">540</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">148</strong></p>
+        <p class="세부정보">4:22PM from 계원예술대학교</p>
+        <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
+
+      </div>
+    
+         <div class="시간표">
+         <p><i class="fa fa-cab 선택대상"></i><strong class="대기시간">4:09-5:47PM</strong> <strong class="소요시간">1hr 38min</strong></p>
+        <p class="세부정보"><i class="fa fa-male"></i>&gt;<i class="fa fa-bus"></i><strong class="번호">51</strong>&gt;<i class="fa fa-bus"></i><strong class="시외번호">3030</strong>&gt;<i class="fa fa-bus"></i><strong class="번호">145</strong></p>
+        <p class="세부정보">4:22PM from 계원예술대학교</p>
+        <p class="세부정보"><i class="fa fa-male"></i>10min every 10 min</p>
+
+      </div>
+  
+
+
   </body>
 </html>
